@@ -1,6 +1,6 @@
 
 import db from './../../models';
-import { sendMessage } from "../helpers/firebase";
+import { sendMessage } from "../helpers/firebase.helper";
 import httpStatus from '../helpers/httpStatus.helper';
 
 const { models } = db.sequelize;

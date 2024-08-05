@@ -17,7 +17,7 @@ const sendMessage = async (token, title, body) => {
             throw error;
         });
 
-    } catch (error) {
+    } catch (error: any) {
 
         return {
             status: 500,
@@ -27,6 +27,6 @@ const sendMessage = async (token, title, body) => {
     }
 };
 
-module.exports = {
-    sendMessage,
+export {
+    sendMessage
 };
